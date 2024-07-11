@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Registration Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<form id="registration-form">
+		<h1 style="text-align: center;">Student Registration Form</h1>
+		
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+		<span id="name-error"></span>
+		<br><br>
+		
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+		<span id="email-error"></span>
+		<br><br>
+		
+		<label for="phone">Phone:</label>
+		<input type="tel" id="phone" name="phone" required>
+		<span id="phone-error"></span>
+		<br><br>
+		
+		<label for="dob">Date of Birth:</label>
+   	 	<input type="date" id="dob" name="dob" required><br>
+    	<span id="dob-error"></span>
+    	<br>
+
+		
+		<label for="age">Age:</label>
+		<input type="number" id="age" name="age" required>
+		<span id="age-error"></span>
+		<br><br>
+		
+		<label for="address">Address:</label>
+		<textarea id="address" name="address" required></textarea>
+		<span id="address-error"></span>
+		<br><br>
+		
+		<label for="inquiry">Any Inquiry :</label>
+    	<input type="text" id="inquiry" name="inquiry" required>
+    	<span id="inquiry-error"></span>
+    	<br>
+
+    	<input type="submit" value="Register">
+    	<p id="success-message"></p>
+		</form>
+
+		<div id="error-message"></div>
+		
+
+	<script src="script.js"></script>
+</body>
+</html>
